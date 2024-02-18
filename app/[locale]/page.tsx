@@ -62,7 +62,7 @@ export default function Home() {
           {/* Facebook */}
           <span>
             <a
-              href="https://www.linkedin.com/in/atlijohanns"
+              href="https://www.facebook.com/atlijohanns"
               target="_blank"
               rel="noopener noreferrer"
             >

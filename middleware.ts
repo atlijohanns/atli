@@ -9,6 +9,9 @@ export default createMiddleware({
 
   // Only use prefix for non-default locale
   localePrefix: "as-needed",
+
+  // Always redirect to default locale
+  localeDetection: false,
 });
 
 export const config = {
