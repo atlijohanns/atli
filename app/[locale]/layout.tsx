@@ -18,7 +18,8 @@ export default function RootLayout({
   params: { locale: string };
 }>) {
   return (
-    <html lang={locale}>
+    // See https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
+    <html lang={locale} suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
