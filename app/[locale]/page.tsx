@@ -4,11 +4,12 @@ import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { ModeToggle } from "@/components/mode-toggle";
 
 export default function Home() {
-  const t = useTranslations("Index");
+  const t = useTranslations("index");
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
       {/* Header */}
       <header>
+        {/* Contact */}
         <div className="flex space-x-4">
           {/* Icons from https://lucide.dev/ */}
 
@@ -115,61 +116,116 @@ export default function Home() {
       <section className="my-12 text-right">
         <ul className="list-none list-inside">
           <li>
-            {t("roleCTO")}{" "}
-            <Link
-              href="https://sogreen.is"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              SoGreen
-            </Link>
+            {t.rich("current.sogreen", {
+              link: (chunks) => (
+                <Link
+                  href="https://sogreen.is"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  {chunks}
+                </Link>
+              ),
+            })}
           </li>
           <li>
-            {t("roleCoFounderCTO")}{" "}
-            <Link
-              href="https://stoff.is"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              Stöff
-            </Link>
+            {t.rich("current.stoff", {
+              link: (chunks) => (
+                <Link
+                  href="https://stoff.is"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  {chunks}
+                </Link>
+              ),
+            })}
           </li>
           <li>
-            {t("roleCoFounder")}{" "}
-            <Link
-              href="https://mannvaen.is"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-            >
-              Samtök um mannvæna tækni
-            </Link>
+            {t.rich("current.mannvaen", {
+              link: (chunks) => (
+                <Link
+                  href="https://mannvaen.is"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
+                  {chunks}
+                </Link>
+              ),
+            })}
           </li>
         </ul>
       </section>
 
       {/* About */}
       <section className="my-12">
-        <p className="text-gray-600 mt-4">{t("description-1")}</p>
-        <p className="text-gray-600 mt-4">{t("description-2")}</p>
-        <p className="text-gray-600 mt-4">{t("description-3")}</p>
+        <p className="mt-4">
+          {t.rich("about.paragraph1", {
+            bold: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+        <p className="mt-4">
+          {t.rich("about.paragraph2", {
+            bold: (chunks) => <strong>{chunks}</strong>,
+          })}
+        </p>
+        <p className="mt-4">
+          {t.rich("about.paragraph3", {
+            bold: (chunks) => <strong>{chunks}</strong>,
+            link1: (chunks) => (
+              <Link
+                href="https://medium.com/zebras-unite/zebrasfix-c467e55f9d96"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {chunks}
+              </Link>
+            ),
+            link2: (chunks) => (
+              <Link
+                href="https://opensource.com/open-source-way"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {chunks}
+              </Link>
+            ),
+            link3: (chunks) => (
+              <Link
+                href="https://a16zcrypto.com/posts/announcement/chris-dixon-book-read-write-own/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {chunks}
+              </Link>
+            ),
+          })}
+        </p>
       </section>
 
       <hr className="my-12" />
 
-      <footer className="flex justify-between text-gray-600">
+      <footer className="flex justify-between">
         <p className="text-xs">
-          {t("viewOn")}{" "}
-          <Link
-            href="https://github.com/atlijohanns/atli"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            GitHub
-          </Link>
+          {t.rich("viewOn", {
+            link: (chunks) => (
+              <Link
+                href="https://github.com/atlijohanns/atli"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                {chunks}
+              </Link>
+            ),
+          })}
+          ,
         </p>
 
         {/* Accessibility */}

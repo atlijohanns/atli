@@ -1,12 +1,16 @@
 {
-  "Index": {
+  "index": {
     "title": "Atli Þór Jóhannsson",
-    "description-1": "Djúpafjörð fullmannlega flókahettu, rjúpum laxakarl karlsefnis matargerð moldbúa. Moldbúa hnútu binda, flýja skemmra vaknaði rak. Nafnbætur bás fold, bráðþroskaður síðu-halli, mælist bótunum rétttrúaður hrauktjald óágjarnir vont. Gefinn dáðmildr leikmótsins fénaður, mývatnshverfi ynnist arnarvatnsheiði, knötturinn iðjumaður bjartur eldfaldin útlægur vígnaðrs vansverðað.",
-    "description-2": "Manngjarnlega veltir blóð, fjörsváfni sveininum, straumfjörð sættarfundarins skorast reri einmani mannhefndir. Mundurinn drjúgastur auðlattr gilið, rýfst eykina barðan, gíslunga hofgarða-refs mótkennandi geirþey gyldist kvinna kaldur. Arnarvatnsheiði eyvindi jarðhúss leiði, hvalurinn fálynd kinnarbeininu matargerð íþrótt. Axlir íslenskir hættar, skinnbókinni sorti, sigvaldi dauðar lög stýri timbrið.",
-    "description-3": "Brandssonar skipbrotsmönnum naðri manskæri, fénaður skyldleikar fastan ættkvíslum þjóðrekssonar. Stáli tefla skipbrotsmönnum, ógiftumaður heilir flýja gervallir. Hrauktjald óágjarnir vont.",
-    "roleCTO": "Tæknistjóri @",
-    "roleCoFounderCTO": "Meðstofnandi & tæknistjóri @",
-    "roleCoFounder": "Meðstofnandi @",
-    "viewOn": "Skoða á"
+    "current": {
+      "sogreen": "Tæknistjóri @ <link>SoGreen</link>",
+      "stoff": "Meðstofnandi & tæknistjóri @ <link>Stöff</link>",
+      "mannvaen": "Meðstofnandi @ <link>Samtök um mannvæna tækni</link>"
+    },
+    "about": {
+      "paragraph1": "<bold>Ég er</bold> einstaklingur með bakgrunn í tæknigeiranum og djúpstæðan áhuga á samfélags- og umhverfismálum, og legg ég mig fram um að nýta tækni sem tæki til góðs.",
+      "paragraph2": "<bold>Mér finnst mikilvægt að</bold> endurskoða ríkjandi efnahags- og viðskiptamódel til að þau miði ekki einungis að hagvexti án tillits til umhverfis eða samfélags, heldur setji velferð fólks og vistkerfis í forgang.",
+      "paragraph3": "<bold>Ég hef áhuga á</bold> því hvernig nútíma <link1>samvinnufélög</link1>, <link2>hugmyndafræði opins aðgangs</link2> og <link3>bálkakeðjutækni</link3> geta stuðlað að auknu gagnsæi, trausti og samvinnu og þannig gera okkur kleift að skapa grundvöll fyrir velferðarhagkerfi sem dreifir tækifærum jafnt og tryggir að þörfum allra, manna og náttúru, sé mætt."
+    },
+    "viewOn": "Skoða á <link>GitHub</link>"
   }
 }
