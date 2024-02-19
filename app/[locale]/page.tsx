@@ -15,7 +15,7 @@ export default function Home() {
 
           {/* Email */}
           <span>
-            <Link href="mailto:atlijohanns@gmail.com">
+            <Link href="mailto:atli@atli.io">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
