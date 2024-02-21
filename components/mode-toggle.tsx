@@ -1,15 +1,42 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 
 export function ModeToggle() {
+  const [mounted, setMounted] = useState(false);
   const { setTheme, theme } = useTheme();
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Placeholder until useEffect runs
+    return (
+      <div className="border rounded-md w-6 h-6 flex items-center justify-center">
+        {/* Placeholder SVG or loading indicator */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-4 h-4 animate-spin"
+        >
+          {/* Simplified loading icon or static placeholder */}
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-18a8 8 0 100 16 8 8 0 000-16zm0 7a1 1 0 11-1 1 1 1 0 011-1zm1 4h-2v2h2v-2z" />
+        </svg>
+        <span className="sr-only">Loading theme toggle</span>
+      </div>
+    );
+  }
 
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       className="border rounded-md w-6 h-6 flex items-center justify-center"
     >
+      {/*  */}
       <span className="sr-only">Toggle mode</span>
       {theme !== "dark" ? (
         <svg
