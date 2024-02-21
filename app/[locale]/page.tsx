@@ -16,7 +16,7 @@ export default function Home() {
           {/* Email */}
           {process.env.SHOW_EMAIL === "true" && (
             <span>
-              <Link href={`mailto:${process.env.EMAIL}`}>
+              <Link href={`mailto:${process.env.EMAIL_ADDRESS}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
