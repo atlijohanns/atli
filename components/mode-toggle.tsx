@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 
 export function ModeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { setTheme, theme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -33,12 +33,11 @@ export function ModeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(resolvedTheme === "light" ? "dark" : "light")}
       className="border rounded-md w-6 h-6 flex items-center justify-center"
     >
-      {/*  */}
       <span className="sr-only">Toggle mode</span>
-      {theme !== "dark" ? (
+      {resolvedTheme !== "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
