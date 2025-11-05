@@ -2,8 +2,8 @@
   "index": {
     "title": "Atli Þór Jóhannsson",
     "current": {
-      "sogreen": "CTO @ <link>SoGreen</link>",
-      "stoff": "Co-Founder & CTO @ @ <link>Stöff</link>",
+      "katlacarbon": "CTO @ <link>Katla Carbon</link> <subtle>formerly SoGreen</subtle>",
+      "stoff": "<strikethrough>Co-Founder & CTO @ <link>Stöff</link></strikethrough> <subtle>temporarily down for overhaul</subtle>",
       "mannvaen": "Co-Founder @ <link>Samtök um mannvæna tækni</link>"
     },
     "about": {
