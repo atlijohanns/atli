@@ -138,9 +138,6 @@ export default function Home() {
                     {chunks}
                   </Link>
                 ),
-                subtle: (chunks) => (
-                  <div className="text-xs opacity-50 mt-0.5">{chunks}</div>
-                ),
               })}
             </div>
           </li>
