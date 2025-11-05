@@ -167,18 +167,20 @@ export default function Home() {
             </div>
           </li>
           <li>
-            {t.rich("current.mannvaen", {
-              link: (chunks) => (
-                <Link
-                  href="https://mannvaen.is"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  {chunks}
-                </Link>
-              ),
-            })}
+            <div>
+              {t.rich("current.mannvaen", {
+                link: (chunks) => (
+                  <Link
+                    href="https://mannvaen.is"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </div>
           </li>
         </ul>
       </section>
