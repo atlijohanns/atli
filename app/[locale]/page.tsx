@@ -124,48 +124,60 @@ export default function Home() {
 
       {/* Current */}
       <section className="my-12 text-right">
-        <ul className="list-none list-inside">
+        <ul className="list-none list-inside space-y-2">
           <li>
-            {t.rich("current.sogreen", {
-              link: (chunks) => (
-                <Link
-                  href="https://sogreen.is"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  {chunks}
-                </Link>
-              ),
-            })}
+            <div>
+              {t.rich("current.katlacarbon", {
+                link: (chunks) => (
+                  <Link
+                    href="https://katlacarbon.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </div>
           </li>
           <li>
-            {t.rich("current.stoff", {
-              link: (chunks) => (
-                <Link
-                  href="https://stoff.is"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  {chunks}
-                </Link>
-              ),
-            })}
+            <div>
+              {t.rich("current.stoff", {
+                link: (chunks) => (
+                  <Link
+                    href="https://stoff.is"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+                strikethrough: (chunks) => (
+                  <span className="line-through">{chunks}</span>
+                ),
+                subtle: (chunks) => (
+                  <div className="text-xs opacity-50 mt-0.5">{chunks}</div>
+                ),
+              })}
+            </div>
           </li>
           <li>
-            {t.rich("current.mannvaen", {
-              link: (chunks) => (
-                <Link
-                  href="https://mannvaen.is"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline"
-                >
-                  {chunks}
-                </Link>
-              ),
-            })}
+            <div>
+              {t.rich("current.mannvaen", {
+                link: (chunks) => (
+                  <Link
+                    href="https://mannvaen.is"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline"
+                  >
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </div>
           </li>
         </ul>
       </section>
